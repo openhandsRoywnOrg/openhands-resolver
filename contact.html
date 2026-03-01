@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式 - 成人专升本官网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">成人专升本官网</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html">课程介绍</a></li>
+                <li><a href="registration.html">报名流程</a></li>
+                <li><a href="contact.html" class="active">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>联系方式</h1>
+            <p>我们随时为您服务，欢迎咨询</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>联系我们</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📞 咨询热线</h3>
+                    <p class="contact-detail">400-888-8888</p>
+                    <p class="contact-hours">服务时间：周一至周日 9:00-21:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📧 电子邮箱</h3>
+                    <p class="contact-detail">info@zhuanshengben.com</p>
+                    <p class="contact-hours">工作日 24 小时内回复</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>💬 在线客服</h3>
+                    <p class="contact-detail">微信：zsbkf2026</p>
+                    <p class="contact-hours">扫码添加，即时咨询</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📍 办公地址</h3>
+                    <p class="contact-detail">北京市朝阳区教育大厦 A 座 10 层</p>
+                    <p class="contact-hours">欢迎预约到访</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>在线留言</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">姓名 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">手机号码 *</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">电子邮箱</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="province">所在省份 *</label>
+                    <select id="province" name="province" required>
+                        <option value="">请选择省份</option>
+                        <option value="beijing">北京市</option>
+                        <option value="shanghai">上海市</option>
+                        <option value="guangdong">广东省</option>
+                        <option value="jiangsu">江苏省</option>
+                        <option value="zhejiang">浙江省</option>
+                        <option value="shandong">山东省</option>
+                        <option value="sichuan">四川省</option>
+                        <option value="hubei">湖北省</option>
+                        <option value="hunan">湖南省</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="major">意向专业</label>
+                    <select id="major" name="major">
+                        <option value="">请选择专业</option>
+                        <option value="business">工商管理</option>
+                        <option value="accounting">会计学</option>
+                        <option value="computer">计算机科学与技术</option>
+                        <option value="chinese">汉语言文学</option>
+                        <option value="law">法学</option>
+                        <option value="education">教育学</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">咨询内容 *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">提交留言</button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <h2>办公地点</h2>
+            <div class="map-placeholder">
+                <p>📍 北京市朝阳区教育大厦 A 座 10 层</p>
+                <p>地铁 10 号线教育大厦站 C 出口即到</p>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <h2>关注我们</h2>
+            <div class="social-links">
+                <div class="social-item">
+                    <h3>微信公众号</h3>
+                    <p>搜索"成人专升本官网"</p>
+                    <div class="qr-placeholder">扫码关注</div>
+                </div>
+                <div class="social-item">
+                    <h3>官方微博</h3>
+                    <p>@成人专升本官网</p>
+                    <p>获取最新资讯和活动</p>
+                </div>
+                <div class="social-item">
+                    <h3>抖音号</h3>
+                    <p>zsb2026</p>
+                    <p>观看备考视频和学员分享</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 成人专升本官网 版权所有</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('感谢您的留言！我们的招生老师会在 1 个工作日内与您联系。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
